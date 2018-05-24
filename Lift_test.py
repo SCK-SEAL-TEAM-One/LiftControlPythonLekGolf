@@ -4,15 +4,15 @@ class TeseCase(unittest.TestCase):
 
     #=============Testcase isOverWeight===============
     def test_over_weight_lower(self):
-        result = lift.isWeightOver(999,1000)
+        result = lift.isWeightOver(999)
         self.assertFalse(result, False)
 
     def test_over_weight_equal(self):
-        result = lift.isWeightOver(1000,1000)
+        result = lift.isWeightOver(1000)
         self.assertFalse(result, False)
 
     def test_over_weight_over(self):
-        result = lift.isWeightOver(1001,1000)
+        result = lift.isWeightOver(1001)
         self.assertTrue(result, True)
 
     #=============Testcase controlLift===============
